@@ -293,7 +293,7 @@ function getCardId(value) {
       result = 0;
       break;
     case 'J':
-      result = 49;
+      result = 10;
       break;
     case 'Q':
       result = 50;
@@ -302,7 +302,6 @@ function getCardId(value) {
       result = 51;
       break;
     default:
-    // console.log('Нет таких значений');
   }
   if (Number(str) >= 2 && Number(str) <= 10) {
     result = Number(str) - 1;

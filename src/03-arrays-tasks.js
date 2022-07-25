@@ -37,7 +37,12 @@ function findElement(arr, value) {
  *    5 => [ 1, 3, 5, 7, 9 ]
  */
 function generateOdds(/* len */) {
-  throw new Error('Not implemented');
+  // let num = -1;
+  // const array = Array(len)
+  //   .fill(1)
+  //   .map((x) => (num += 2));
+  // return array;
+  // throw new Error('Not implemented');
 }
 
 /**
@@ -218,8 +223,12 @@ function getTail(arr, n) {
  *    +'20,21,22,23,24\n'
  *    +'30,31,32,33,34'
  */
-function toCsvText(/* arr */) {
-  throw new Error('Not implemented');
+function toCsvText(arr) {
+  const newCsv = arr.map((arrI) => `${arrI.join(',')}\n`);
+  const str = newCsv.join('');
+  return str.trim();
+
+  // throw new Error('Not implemented');
 }
 
 /**
